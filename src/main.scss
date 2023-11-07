@@ -1,23 +1,29 @@
 @import "./styles/colors";
+@import "./styles/components/headerFooter";
 
 body{
-    margin: 0;
+    margin: 20px 60px;
     padding: 0;
     font-family: "Share Tech", Arial, Helvetica, sans-serif;
-    color: #0F0;
+    color: $dark_slate;
+    background: url(./images/BG_BlackDot.png) repeat;
 }
-header{
-    font-family: Arial, Helvetica, sans-serif;
-    color: $main_color;
+.container{
+    margin: 0 auto;
+    min-width: calc(768px-120px);
+    max-width: 900px;
 }
-
 h1{
     font-family: "Share Tech Mono", Arial, Helvetica, sans-serif;
 }
 
-p{
-    color: #AAA;
+
+a{
+    color: $a_link_text;
+    &:hover{
+        background: $btn_over;
+    }
 }
-span{
-    font-weight: bold;
+.homeTT{
+    text-align: center;
 }
