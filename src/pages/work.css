@@ -136,44 +136,46 @@ nav .navItemCont a .selected {
     text-align: right;
   }
 }
-@media screen and (max-width: 420px) {
-  body {
-    padding: 0;
-    font-family: "Share Tech", Arial, Helvetica, sans-serif;
-    color: #2f2f31;
-    background: url(./images/BG_BlackDot.png) repeat;
-  }
-  h1 {
-    font-family: "Share Tech Mono", Arial, Helvetica, sans-serif;
-  }
-  .homeTT {
-    text-align: center;
-  }
+body {
+  margin: 20px 60px;
+  padding: 0;
+  font-family: "Share Tech", Arial, Helvetica, sans-serif;
+  color: #2f2f31;
+  background: url(./images/BG_BlackDot.png) repeat;
 }
-@media screen and (min-width: 480px) {
+
+.container {
+  margin: 0 auto;
+  min-width: 648px;
+  max-width: 970px;
+}
+
+h1 {
+  font-family: "Share Tech Mono", Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: #3a3b3c;
+  transition: 0.4s ease-in-out;
+}
+a:hover {
+  background: wheat;
+}
+
+.homeTT {
+  text-align: center;
+}
+
+@media screen and (max-width: 320px) {
   body {
-    margin: 20px 60px;
-    padding: 0;
-    font-family: "Share Tech", Arial, Helvetica, sans-serif;
-    color: #2f2f31;
-    background: url(./images/BG_BlackDot.png) repeat;
+    margin: 20px 20px;
   }
   .container {
     margin: 0 auto;
-    min-width: 648px;
-    max-width: 970px;
+    min-width: 300px;
+    max-width: 320px;
   }
-  h1 {
-    font-family: "Share Tech Mono", Arial, Helvetica, sans-serif;
-  }
-  a {
-    color: #3a3b3c;
-    transition: 0.4s ease-in-out;
-  }
-  a:hover {
-    background: wheat;
-  }
-  .homeTT {
-    text-align: center;
-  }
-}/*# sourceMappingURL=main.css.map */
+}
+body {
+  background: url(../images/BG_BlackDot.png) repeat;
+}/*# sourceMappingURL=work.css.map */

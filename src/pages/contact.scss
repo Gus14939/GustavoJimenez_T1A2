@@ -1,0 +1,129 @@
+@import "../main.scss";
+
+// vars for form 
+$form_inputs: 47%;
+
+body{
+    background: url(../images/BG_BlackDot.png) repeat;
+}
+
+.contactTT {
+    text-align: center;
+    padding: 0px 100px;
+}
+.contactForm{
+    margin:50px 0px 160px;
+    form{
+        margin: 0 auto;
+        max-width: 700px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 10px;
+        box-sizing: border-box;
+        position: relative;
+        font-family: "Share Tech", Arial, Helvetica, sans-serif;
+        @media screen and (max-width:320px){
+            display: block;
+            max-width: 300px;
+        }
+    }
+    textarea{
+        resize: none;
+        width: $form_inputs;
+        height: 140px;
+        margin-top: 20px;
+        border-radius: 2;
+        border: 1px solid $dark_slate;
+        font-family: "Share Tech", Arial, Helvetica, sans-serif;
+        font-size: 0.9em;
+        box-sizing: border-box;
+    }
+    textarea:focus{
+        background:$btn_over;
+        outline: none;
+        border-right: 3px solid $dark_slate;
+        border-bottom: 3px solid $dark_slate;
+    }
+    input[type=text]{
+        width: $form_inputs;
+        height: 40px;
+        margin-top: 20px;
+        border: 1px solid $dark_slate;
+        font-family: "Share Tech", Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+    }
+    input:focus{
+        background:$btn_over;
+        outline: none;
+        border-right: 3px solid $dark_slate;
+        border-bottom: 3px solid $dark_slate;
+    }
+    select{
+        width: $form_inputs;
+        height: 40px;
+        margin-top: 20px;
+        border: 1px solid $dark_slate;
+        font-family: "Share Tech", Arial, Helvetica, sans-serif;
+        
+        & *{
+            color:$dark_slate;
+            padding-left: 10px;
+        }
+    }
+    ::placeholder {
+        color:$lighter_slate;
+        padding-left: 10px;
+    }
+    .formChecks{
+        width: 47%;
+        margin-top: 20px;
+        position: relative;
+        div{
+            position: relative;
+            height: 25px;
+
+            input[type=checkbox]{
+                border-radius: 0;
+                background-color: $dark_slate;
+                margin: 0px;
+                width: 15px;
+                height: 15px;
+                position: absolute;
+                top: 2px;
+            }
+            label{
+                font-family: "Share Tech", Arial, Helvetica, sans-serif;
+                font-size: 0.9em;
+                color: $light_slate;
+                padding-left: 20px;
+
+
+            }
+        }
+        .formButton{
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            bottom: 24px;
+            a{
+                text-decoration: none;
+                color: $dark_slate;
+                div{
+                    padding: 10px 0px;
+                    border: 1px solid $dark_slate;
+                    border-radius: 5px;
+                    border-bottom:2px solid $dark_slate;
+                    background: $base_color;
+                    transition: 0.3s ease-in-out;
+                    &:hover{
+                        // border-bottom: 3px solid $dark_slate;
+                        // transform: translate(0px, -1px);
+                        background: $btn_over;
+                    }
+                }
+            }
+        }
+
+    }
+}        

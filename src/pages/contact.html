@@ -3,50 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gustavo Jimenez | Portfolio | contact me</title>
+    <title>Gustavo Jimenez | Portfolio</title>
 <!-- // Fonts // -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Share+Tech&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Share+Tech&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 
 <!-- // Styles // -->
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./contact.css">
 </head>
 <body>
-    <header>
-        
-        <div class="logo">
-            <img src="images/logo.png" alt="myCompany">
-            <p><a href="#"></a><span>Guss Tech</span></a></p>
-        </div>
-        <ul>
-            <Li><a href="about.html">| About</a></Li>
-            <Li><a href="work.html">| Work</a></Li>
-            <Li><a href="">| Contact</a></Li>
-        </ul>
-    </header>
-    <nav>
+    <div class="container">
+        <header>        
+            <div class="logo">
+                <a href="../index.html"><div>Gussdev</div></a>
+            </div>
+            <nav>
+                <div class="navItemCont">
+                    <a href="about.html"><div>about</div></a>
+                </div>
+                <div class="navItemCont">
+                    <a href="work.html"><div>Work</div></a>
+                </div>
+                <div class="navItemCont">
+                    <a href=""><div class="selected">Contact</div></a>
+                </div>    
+            </nav>
+        </header>
 
-    </nav>
+        <!-- MAIN Starts -->
+        <main>
+            <div class="contactTT">
+                <h1> Great, you're one step closer to your goals and creating something great</h1>   
+            </div>
+            <!-- FORM Starts -->
+            <div class="contactForm">
+                <form action="submit">
+                    <input type="text" name="name" id="name" placeholder="full name">
+                    <input type="text" name="mobile" id="mobile" placeholder="mobile">
+                    <input type="text" name="email" id="email"  placeholder="email">
+                    <select name="" id="budget"  placeholder="select your budget">
+                        <option value="choose">select project budget</option>
+                        <option value="2k-5k">$2,000 to $5,000</option>
+                        <option value="5k-10k">$5,000 to $10,000</option>
+                        <option value="10k-20k">$10,00 to $20,000</option>
+                        <option value="20k-50k">$20,000 to $50,000</option>
+                    </select>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="describe your project"></textarea>
+                    <div class="formChecks">
+                        <div><input type="checkbox" id="weekly"><label for="weekly">weekly</label></div>
+                        <div><input type="checkbox" id="monthly"><label for="monthly">monthly</label></div>
+                        <div class="formButton">
+                            <a href="#"><div>send</div></a>
+                        </div>
+                    </div>
+                    
+                </form>
 
-    <main>
-        <div class="">
-            <h1>CONTACT</h1>
-
-        </div>
-    </main>
-
-    <footer>
-        <div>
-            <p>P: 0426 243 922</p>
-            <p>A: 116 Wycombe Rd, Sydney, NSW</p>
-        </div>
-        <div>
-            <ul>
-                <Li><a href="https://www.github.com" target="_blank"><i class="fa-brands fa-github-alt"></i></a></Li>
-                <Li><a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a></Li>
-            </ul>
-        </div>    
-    </footer>
+            </div>
+        </main>
+        <!-- FOOTER Starts -->
+        <footer>     
+            <div class="footLinks">
+                <div class="footItemCont">
+                    <a href="https://github.com/Gus14939" target="_blank"><div class="footLinks-a">github</div></a>
+                </div>
+                <div class="footItemCont">
+                    <a href="https://www.linkedin.com/in/guss55/" target="_blank"><div class="footLinks-a">linkedIn</div></a>
+                </div>  
+            </div>   
+            <div class="footDeets">
+                <p>Gustavo Jimenez</p>
+                <p>P: 0426 243 922 | A: 116 Wycombe Rd, Sydney, NSW</p>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
