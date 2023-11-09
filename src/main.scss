@@ -1,67 +1,90 @@
 @import "./styles/colors";
 @import "./styles/components/headerFooter";
-@media screen and (max-width:420px) {
 
-    body{
-        padding: 0;
-        font-family: "Share Tech", Arial, Helvetica, sans-serif;
-        color: $dark_slate;
-        background: url(./images/BG_BlackDot.png) repeat;
-    }
-    h1{
-        font-family: "Share Tech Mono", Arial, Helvetica, sans-serif;
-    }
-    .homeTT{
-        text-align: center;
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Share Tech", Arial, Helvetica, sans-serif;
+    color: $dark_slate;
+    background: url(./images/BG_BlackDot.png) repeat;
+    font-size: 20px
+}
+.container{
+    padding: 0px 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 648px; //calc(768px - 120px);
+    max-width: 970px;
+    box-sizing: border-box;
+    border: 1px solid green;
+}
+h1{
+    font-family: "Share Tech Mono", Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+}
+a{
+    color: $a_link_text;
+    transition: 0.4s ease-in-out;
+    &:hover{
+        background: $btn_over;
     }
 }
-// Mobile styles
-@media screen and (min-width:480px) {
+.homeTT{
+    text-align: center;
+}
+//  Mobile styles ----------------------------------------- MOBILE
+/////////////////////////////////////////////////////////////////
+@media screen and (max-width:480px) {
     body{
-        margin: 20px 60px;
         padding: 0;
+        margin: 0;
         font-family: "Share Tech", Arial, Helvetica, sans-serif;
         color: $dark_slate;
         background: url(./images/BG_BlackDot.png) repeat;
     }
     .container{
-        margin: 0 auto;
-        min-width: 648px; //calc(768px - 120px);
-        max-width: 970px;
+        padding: 0px 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 100%;
+        max-width: 90%;
+        box-sizing: border-box;
+        border: 2px solid red;
     }
     h1{
-        font-family: "Share Tech Mono", Arial, Helvetica, sans-serif;
+        font-size: 1em;
     }
-
-
-    a{
-        color: $a_link_text;
-        transition: 0.4s ease-in-out;
-        &:hover{
-            background: $btn_over;
-        }
-    }
-    .homeTT{
-        text-align: center;
-    }
+    // mobile closing }
 }
 
-// @media screen and (max-width:320px) and (max-width:480px){
-
-// @media screen and (max-width:320px){
-//     body{
-//         margin: 0;
-//         padding: 0;
-//     } 
-//     .container{
-//         margin: 0 auto;
-//         width: vw;
-//         box-sizing: border-box;
-//     }    
-//     .homeTT{
-//         width: vw;
-//     }
-// }
-// only screen and (min-width: 768px) {
-
-// }
+//  Tablet styles ----------------------------------------- TABLE
+/////////////////////////////////////////////////////////////////
+@media screen and (min-width:481px) and (max-width:962px) {
+    body{
+        padding: 0;
+        margin: 0;
+        font-family: "Share Tech", Arial, Helvetica, sans-serif;
+        color: $dark_slate;
+        background: url(./images/BG_BlackDot.png) repeat;
+    }
+    .container{
+        padding: 0px 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 500px; //calc(768px - 120px);
+        max-width: 930px;
+        box-sizing: border-box;
+        border: 2px solid yellow;
+    }
+    h1{
+        font-size: 1.25em;
+    }
+    // tablet closing }
+}

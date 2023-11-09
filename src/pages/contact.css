@@ -1,3 +1,9 @@
+body {
+  font-family: "Share Tech", Arial, Helvetica, sans-serif;
+  color: #2f2f31;
+  font-size: 20px;
+}
+
 header {
   margin-bottom: 30px;
 }
@@ -15,7 +21,8 @@ header, footer {
 }
 header .logo, footer .logo {
   font-family: Aldrich, Arial, Helvetica, sans-serif;
-  font-size: 30px;
+  font-size: 32px;
+  margin-top: 3px;
 }
 header .logo a, footer .logo a {
   text-decoration: none;
@@ -23,9 +30,9 @@ header .logo a, footer .logo a {
 }
 header .footDeets p, footer .footDeets p {
   font-size: 14px;
+  line-height: 14px;
   text-decoration: none;
   color: #4b4d4f;
-  line-height: 14px;
   margin: 0px;
   padding: 0px;
   text-align: right;
@@ -38,11 +45,11 @@ nav {
   justify-content: space-between;
 }
 nav .navItemCont {
-  width: 14vw;
-  max-width: 180px;
-  min-width: 140px;
+  width: 31%;
+  min-width: 28%;
   text-align: center;
   position: relative;
+  font-size: 0.75em;
 }
 nav .navItemCont a {
   text-decoration: none;
@@ -58,30 +65,30 @@ nav .navItemCont a div {
   transition: 0.3s ease-in-out;
 }
 nav .navItemCont a div:hover {
-  border-bottom: 7px solid #2f2f31;
-  border-right: 7px solid #2f2f31;
-  transform: translate(-5px, -5px);
+  border-bottom: 5px solid #2f2f31;
+  border-right: 5px solid #2f2f31;
+  transform: translate(-3px, -3px);
   background: wheat;
 }
 nav .navItemCont a .selected {
-  border-bottom: 7px solid #2f2f31;
-  border-right: 7px solid #2f2f31;
-  transform: translate(-5px, -5px);
+  border-bottom: 5px solid #2f2f31;
+  border-right: 5px solid #2f2f31;
+  transform: translate(-3px, -3px);
   background: wheat;
 }
 
 .footLinks {
   display: flex;
-  width: 35%;
+  width: 40%;
   height: 50px;
   justify-content: flex-start;
 }
 .footLinks .footItemCont {
-  width: 8vw;
-  max-width: 140px;
-  min-width: 70px;
+  width: 38%;
+  min-width: 90px;
   text-align: center;
   position: relative;
+  font-size: 0.75em;
 }
 .footLinks .footItemCont a {
   text-decoration: none;
@@ -104,54 +111,122 @@ nav .navItemCont a .selected {
   background: wheat;
 }
 
-@media screen and (max-width: 320px) {
-  header {
-    margin-bottom: 20px;
-  }
-  footer {
-    margin-top: 30px;
-    padding: 0px 10px;
-  }
+@media screen and (max-width: 480px) {
   header, footer {
-    font-family: "Share Tech", Arial, Helvetica, sans-serif;
-    color: #2f2f31;
     display: block;
-    justify-content: space-between;
   }
   header .logo, footer .logo {
-    font-family: Aldrich, Arial, Helvetica, sans-serif;
-    font-size: 20px;
-  }
-  header .logo a, footer .logo a {
-    text-decoration: none;
-    color: #54BFFC;
+    font-size: 30px;
+    text-align: center;
   }
   header .footDeets p, footer .footDeets p {
-    font-size: 14px;
+    text-align: center;
+  }
+  nav {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+  nav .navItemCont {
+    width: 31%;
+    min-width: 28%;
+    text-align: center;
+    position: relative;
+  }
+  nav .navItemCont a {
     text-decoration: none;
-    color: #4b4d4f;
-    line-height: 14px;
-    margin: 0px;
-    padding: 0px;
-    text-align: right;
+    color: #2f2f31;
+  }
+  nav .navItemCont a div {
+    padding: 3px 0px;
+    border: 1px solid #2f2f31;
+    border-radius: 6px;
+    border-bottom: 1px solid #2f2f31;
+    border-right: 1px solid #2f2f31;
+    background: white;
+    transition: 0.3s ease-in-out;
+  }
+  nav .navItemCont a div:hover {
+    border-bottom: 2px solid #2f2f31;
+    border-right: 1px solid #2f2f31;
+    transform: translate(0px, -1px);
+    background: wheat;
+  }
+  nav .navItemCont a .selected {
+    border-bottom: 2px solid #2f2f31;
+    border-right: 1px solid #2f2f31;
+    transform: translate(0px, -1px);
+    background: wheat;
+  }
+  .footLinks {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+  }
+  .footLinks .footItemCont {
+    width: 8vw;
+    max-width: 140px;
+    min-width: 70px;
+    text-align: center;
+    position: relative;
+  }
+  .footLinks .footItemCont a {
+    text-decoration: none;
+    color: #2f2f31;
+  }
+  .footLinks .footItemCont a div {
+    margin-right: 10%;
+    padding: 3px;
+    border: 1px solid #2f2f31;
+    border-radius: 6px;
+    border-left: 1px solid #2f2f31;
+    border-bottom: 1px solid #2f2f31;
+    background: #eee;
+    transition: 0.3s ease-in-out;
+  }
+  .footLinks .footItemCont a div:hover {
+    border-bottom: 2px solid #2f2f31;
+    border-left: 1px solid #2f2f31;
+    transform: translate(0px, -1px);
+    background: wheat;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 962px) {
+  header .logo, footer .logo {
+    font-size: 24px;
+  }
+  nav .navItemCont a div {
+    padding: 4px 0px;
   }
 }
 body {
-  margin: 20px 60px;
   padding: 0;
+  margin: 0;
   font-family: "Share Tech", Arial, Helvetica, sans-serif;
   color: #2f2f31;
   background: url(./images/BG_BlackDot.png) repeat;
+  font-size: 20px;
 }
 
 .container {
-  margin: 0 auto;
+  padding: 0px 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
   min-width: 648px;
   max-width: 970px;
+  box-sizing: border-box;
+  border: 1px solid green;
 }
 
 h1 {
   font-family: "Share Tech Mono", Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 1.5em;
 }
 
 a {
@@ -166,14 +241,50 @@ a:hover {
   text-align: center;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
   body {
-    margin: 20px 20px;
+    padding: 0;
+    margin: 0;
+    font-family: "Share Tech", Arial, Helvetica, sans-serif;
+    color: #2f2f31;
+    background: url(./images/BG_BlackDot.png) repeat;
   }
   .container {
-    margin: 0 auto;
-    min-width: 300px;
-    max-width: 320px;
+    padding: 0px 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 100%;
+    max-width: 90%;
+    box-sizing: border-box;
+    border: 2px solid red;
+  }
+  h1 {
+    font-size: 1em;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 962px) {
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: "Share Tech", Arial, Helvetica, sans-serif;
+    color: #2f2f31;
+    background: url(./images/BG_BlackDot.png) repeat;
+  }
+  .container {
+    padding: 0px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 500px;
+    max-width: 930px;
+    box-sizing: border-box;
+    border: 2px solid yellow;
+  }
+  h1 {
+    font-size: 1.25em;
   }
 }
 body {
@@ -182,7 +293,10 @@ body {
 
 .contactTT {
   text-align: center;
-  padding: 0px 100px;
+  padding: 0px 12%;
+}
+.contactTT h1 {
+  font-size: 1em;
 }
 
 .contactForm {
@@ -199,14 +313,7 @@ body {
   position: relative;
   font-family: "Share Tech", Arial, Helvetica, sans-serif;
 }
-@media screen and (max-width: 320px) {
-  .contactForm form {
-    display: block;
-    max-width: 300px;
-  }
-}
 .contactForm textarea {
-  resize: none;
   width: 47%;
   height: 140px;
   margin-top: 20px;
@@ -215,6 +322,7 @@ body {
   font-family: "Share Tech", Arial, Helvetica, sans-serif;
   font-size: 0.9em;
   box-sizing: border-box;
+  resize: none;
 }
 .contactForm textarea:focus {
   background: wheat;
@@ -299,4 +407,44 @@ body {
 }
 .contactForm .formChecks .formButton a div:hover {
   background: wheat;
+}
+
+@media screen and (max-width: 480px) {
+  .contactTT h1 {
+    font-size: 25px;
+  }
+  .contactForm {
+    margin: 10px 0px 20px;
+  }
+  .contactForm form {
+    margin: 0 auto;
+    max-width: 80%;
+    display: block;
+  }
+  .contactForm textarea {
+    width: 100%;
+    height: 140px;
+  }
+  .contactForm input[type=text] {
+    width: 100%;
+  }
+  .contactForm select {
+    width: 100%;
+  }
+  .contactForm .formChecks {
+    width: 100%;
+    background: none;
+    height: 85px;
+  }
+  .contactForm .formChecks .formButton {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 962px) {
+  .contactTT h1 {
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=contact.css.map */
