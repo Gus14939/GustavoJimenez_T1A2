@@ -296,11 +296,11 @@ body {
   padding: 0px 12%;
 }
 .contactTT h1 {
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 .contactForm {
-  margin: 50px 0px 160px;
+  margin: 30px 0px 80px;
 }
 .contactForm form {
   margin: 0 auto;

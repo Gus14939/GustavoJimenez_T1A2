@@ -18,12 +18,17 @@ body{
     min-width: 648px; //calc(768px - 120px);
     max-width: 970px;
     box-sizing: border-box;
-    border: 1px solid green;
+    // border: 1px solid green;
 }
 h1{
     font-family: "Share Tech Mono", Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 1.5em;
+}
+h2{
+    font-family: "Share Tech Mono", Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 1.1em;
 }
 a{
     color: $a_link_text;
@@ -35,6 +40,67 @@ a{
 .homeTT{
     text-align: center;
 }
+.homeLatestWork, .homeCaseStudy {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+    >div{
+        width: 49%;
+        background: $base_color;
+        border: 1px solid $lighter_slate;
+        .imgCont, .imgCont1x1{
+            width: 100%;
+            height: 200px;
+            box-sizing: border-box;
+            overflow: hidden;
+            position: relative;
+            // border: 1px solid $lighter_slate;
+            img{
+                text-align: center;
+                width: 100%;
+                transition: 0.4s ease-in-out;
+                &:hover{
+                    scale:1.02;
+                    // filter: grayscale()
+                    filter:saturate(2.5)
+                }
+            }
+        }   
+    }
+    p, h3{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+// complementary-Style
+.homeCaseStudy {
+    border: 1px solid $lighter_slate;
+    height: 350px;
+    >div{
+        width: 50%;
+        background: $base_color;
+        border: none;        
+        overflow: hidden;
+        .imgCont1x1{
+            width: 100%;
+            height: 100%;
+            img{
+                text-align: center;
+                height: 100%;
+                width: auto;
+                transition: 0.4s ease-in-out;
+            }
+        }   
+    }
+    .caseStudyTxt{
+        text-align: left;
+        overflow: scroll;
+    }
+    .studyLink{
+        text-align: right;
+    }
+}
+
 //  Mobile styles ----------------------------------------- MOBILE
 /////////////////////////////////////////////////////////////////
 @media screen and (max-width:480px) {
