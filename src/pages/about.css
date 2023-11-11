@@ -398,180 +398,35 @@ body {
   background: url(../images/BG_BlackDot.png) repeat;
 }
 
-.contactTT {
-  text-align: center;
-  padding: 0px 12%;
-}
-.contactTT h1 {
-  font-size: 1.5em;
+.aboutMainTxt {
+  background: white;
+  padding: 15px 50px;
 }
 
-.contactForm {
-  margin: 30px 0px;
-}
-.contactForm form {
-  margin: 0 auto;
-  max-width: 700px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 10px;
-  box-sizing: border-box;
-  position: relative;
-  font-family: "Share Tech", Arial, Helvetica, sans-serif;
-}
-.contactForm textarea {
-  width: 47%;
-  height: 140px;
-  margin-top: 20px;
-  border-radius: 2;
-  border: 1px solid #2f2f31;
-  font-family: "Share Tech", Arial, Helvetica, sans-serif;
-  font-size: 0.9em;
-  box-sizing: border-box;
-  resize: none;
-}
-.contactForm textarea:focus {
-  background: wheat;
-  outline: none;
-  border-right: 3px solid #2f2f31;
-  border-bottom: 3px solid #2f2f31;
-}
-.contactForm input[type=text] {
-  width: 47%;
-  height: 40px;
-  margin-top: 20px;
-  border: 1px solid #2f2f31;
-  font-family: "Share Tech", Arial, Helvetica, sans-serif;
-  box-sizing: border-box;
-}
-.contactForm input:focus {
-  background: wheat;
-  outline: none;
-  border-right: 3px solid #2f2f31;
-  border-bottom: 3px solid #2f2f31;
-}
-.contactForm select {
-  width: 47%;
-  height: 40px;
-  margin-top: 20px;
-  border: 1px solid #2f2f31;
-  font-family: "Share Tech", Arial, Helvetica, sans-serif;
-}
-.contactForm select * {
-  color: #2f2f31;
-  padding-left: 10px;
-}
-.contactForm ::-moz-placeholder {
-  color: #a5abaf;
-  padding-left: 10px;
-}
-.contactForm ::placeholder {
-  color: #a5abaf;
-  padding-left: 10px;
-}
-.contactForm .formChecks {
-  width: 47%;
-  margin-top: 20px;
-  position: relative;
-}
-.contactForm .formChecks div {
-  position: relative;
-  height: 25px;
-}
-.contactForm .formChecks div input[type=checkbox] {
-  border-radius: 0;
-  background-color: #2f2f31;
-  margin: 0px;
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  top: 2px;
-}
-.contactForm .formChecks div label {
-  font-family: "Share Tech", Arial, Helvetica, sans-serif;
-  font-size: 0.9em;
-  color: #4b4d4f;
-  padding-left: 20px;
-}
-.contactForm .formChecks .formButton {
-  width: 100%;
+.resumeLink {
+  width: 31%;
+  min-width: 28%;
   text-align: center;
-  position: absolute;
-  bottom: 24px;
+  position: relative;
+  font-size: 0.75em;
+  height: 45px;
 }
-.contactForm .formChecks .formButton a {
+.resumeLink a {
   text-decoration: none;
   color: #2f2f31;
 }
-.contactForm .formChecks .formButton a div {
-  padding: 10px 0px;
+.resumeLink a div {
+  padding: 6px 0px;
   border: 1px solid #2f2f31;
-  border-radius: 5px;
-  border-bottom: 2px solid #2f2f31;
+  border-radius: 8px;
+  border-bottom: 3px solid #2f2f31;
+  border-left: 3px solid #2f2f31;
   background: white;
   transition: 0.3s ease-in-out;
 }
-.contactForm .formChecks .formButton a div:hover {
+.resumeLink a div:hover {
+  border-bottom: 5px solid #2f2f31;
+  border-left: 5px solid #2f2f31;
+  transform: translate(3px, -3px);
   background: wheat;
-}
-
-.personal-info {
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  box-sizing: border-box;
-  position: relative;
-  background: white;
-  font-family: "Share Tech", Arial, Helvetica, sans-serif;
-}
-.personal-info div {
-  width: 49%;
-}
-.personal-info div img {
-  width: 100%;
-}
-.personal-info div p {
-  margin: 10px 0px;
-}
-
-@media screen and (max-width: 480px) {
-  .contactTT h1 {
-    font-size: 25px;
-  }
-  .contactForm {
-    margin: 10px 0px 20px;
-  }
-  .contactForm form {
-    margin: 0 auto;
-    max-width: 80%;
-    display: block;
-  }
-  .contactForm textarea {
-    width: 100%;
-    height: 140px;
-  }
-  .contactForm input[type=text] {
-    width: 100%;
-  }
-  .contactForm select {
-    width: 100%;
-  }
-  .contactForm .formChecks {
-    width: 100%;
-    background: none;
-    height: 85px;
-  }
-  .contactForm .formChecks .formButton {
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    bottom: 0px;
-  }
-}
-@media screen and (min-width: 481px) and (max-width: 962px) {
-  .contactTT h1 {
-    font-size: 18px;
-  }
-}/*# sourceMappingURL=contact.css.map */
+}/*# sourceMappingURL=about.css.map */

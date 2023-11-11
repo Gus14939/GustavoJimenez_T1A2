@@ -1,0 +1,40 @@
+@import "../main.scss";
+
+body{
+    background: url(../images/BG_BlackDot.png) repeat;
+}
+
+.aboutMainTxt{
+    background: $base_color;
+    padding:15px 50px;
+}
+
+// Styled from the navigation bar - renamed
+.resumeLink{
+    width: 31%;
+    min-width: 28%;
+    text-align: center;
+    position: relative;    
+    font-size: 0.75em;
+    height: 45px;
+    a{
+        text-decoration: none;
+        color: $dark_slate;
+        div{
+            padding: 6px 0px;
+            border: 1px solid $dark_slate;
+            border-radius: 8px;
+            border-bottom:3px solid $dark_slate;
+            border-left:3px solid $dark_slate;
+            background: $base_color;
+            transition: 0.3s ease-in-out;
+            &:hover{
+                border-bottom:5px solid $dark_slate;
+                border-left:5px solid $dark_slate;
+                transform: translate(3px, -3px);
+                background: $btn_over;
+            }
+        }
+
+    }
+}    
