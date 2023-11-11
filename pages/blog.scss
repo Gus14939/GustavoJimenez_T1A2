@@ -1,0 +1,78 @@
+@import "../main.scss";
+
+// vars for form 
+$form_inputs: 47%;
+body{
+    background-color: #000;
+    position: relative;
+    background: url(../images/BG_WhiteDot.png) repeat;
+    // opacity: 0.2;
+    color: $base_color;
+}
+
+a{
+    color: $base_color;
+    transition: 0.4s ease-in-out;
+    &:hover{
+        background: $btn_over;
+        color: $dark_slate;
+    }
+}
+.container{
+    background: $dark_slate;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.homeSections{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+    background: $dark_slate;
+    p, h1, h2, h3, h4, span{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .imgCont{
+        box-sizing: border-box;
+        overflow: hidden;
+        position: relative;
+        // border: 1px solid $lighter_slate;
+        img{
+            text-align: center;
+            width: 100%;
+            transition: 0.4s ease-in-out;
+            &:hover{
+                scale:1.02;
+                // filter: grayscale()
+                filter:saturate(2.5)
+            }
+        }
+    }  
+}
+
+// case study section
+.homeCaseStudy {
+    border: none; //1px solid $darkness;
+    height: 350px;
+    .caseStudyTxt{
+        text-align: left;
+    }
+
+}
+.fr-study{
+    width: 50%;
+    background: $dark_slate;
+    border: none;        
+    overflow: hidden;
+    .imgCont{
+        width: 100%;
+        height: 100%;
+        img{
+            height: 100%;
+            width: auto;
+        }
+    }   
+}
+footer{
+    justify-content: center;
+}
