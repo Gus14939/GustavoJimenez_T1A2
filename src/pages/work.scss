@@ -3,3 +3,72 @@
 body{
     background: url(../images/BG_BlackDot.png) repeat;
 }
+
+.gridance{
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    min-width: 320px;
+    padding: 10px 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    display: grid; // ---------------   GRID
+    grid-gap: 8px;
+    justify-content: center;
+    grid-template-rows: repeat(2, 140px);
+    grid-template-columns: repeat(auto-fit, minmax(240px, 260px));
+    grid-auto-rows: 140px;
+    // mobile
+    @media screen and (min-width:320px) and (max-width:380px) {
+        grid-template-rows: repeat(0, 80px);
+        grid-template-columns: repeat(auto-fit, 1fr);
+        grid-gap: 6px;
+        // grid-auto-rows: 175px;
+    }
+    @media screen and (min-width:381px) and (max-width:544px) {
+        grid-template-rows: repeat(6, 20vw);
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        grid-gap: 6px;
+        // grid-auto-rows: 175px;
+    }
+    @media screen and (min-width:545px) and (max-width:962px) {
+        grid-template-rows: repeat(2, 125px);
+        grid-template-columns: repeat(auto-fit, minmax(220px, 240px));
+        grid-auto-rows: 125px;
+        grid-gap: 7px;
+    }
+    div{
+        width: 100%;
+        height: 100%;
+        background-color: pink;
+        border: 1px solid $light_slate ;
+        box-sizing: border-box;
+        transition: 0.4s ease-in-out;
+        transform-origin: center;
+        overflow: hidden;
+        &:hover{
+            filter:saturate(2.5);
+            background-size: 105%;
+            border: 1px solid $lighter_slate ;
+        }
+        &:hover > img{
+            scale:1.05;
+        }
+        img{
+            width: 100%;
+            transition: 0.4s ease-in-out;
+        }
+
+    }
+}
+.item{
+    background: url(../images/AdobeStock_451135987.jpeg) no-repeat center center;
+    background-size: 100%;
+}
+
+//  Mobile styles ----------------------------------------- MOBILE
+/////////////////////////////////////////////////////////////////
+@media screen and (max-width:480px) {
+}

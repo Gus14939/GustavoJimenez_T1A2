@@ -28,7 +28,18 @@ h1{
 h2{
     font-family: "Share Tech Mono", Arial, Helvetica, sans-serif;
     text-align: left;
+    font-size: 1.2em;
+}
+h3{
+    font-family: "Share Tech Mono", Arial, Helvetica, sans-serif;
+    text-align: left;
     font-size: 1.1em;
+}
+h4{
+    font-family: "Share Tech Mono", Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 1em;
+    padding: 6px 0px 5px;
 }
 a{
     color: $a_link_text;
@@ -40,58 +51,46 @@ a{
 .homeTT{
     text-align: center;
 }
-.homeLatestWork, .homeCaseStudy {
+// container for home < section >
+.homeSections{
     display: flex;
     justify-content: space-between;
     font-size: 0.8em;
-    >div{
-        width: 49%;
-        background: $base_color;
-        border: 1px solid $lighter_slate;
-        .imgCont, .imgCont1x1{
-            width: 100%;
-            height: 200px;
-            box-sizing: border-box;
-            overflow: hidden;
-            position: relative;
-            // border: 1px solid $lighter_slate;
-            img{
-                text-align: center;
-                width: 100%;
-                transition: 0.4s ease-in-out;
-                &:hover{
-                    scale:1.02;
-                    // filter: grayscale()
-                    filter:saturate(2.5)
-                }
-            }
-        }   
-    }
-    p, h3{
+    p, h3, h4{
         padding-left: 5%;
         padding-right: 5%;
     }
+    .imgCont{
+        box-sizing: border-box;
+        overflow: hidden;
+        position: relative;
+        // border: 1px solid $lighter_slate;
+        img{
+            text-align: center;
+            width: 100%;
+            transition: 0.4s ease-in-out;
+            &:hover{
+                scale:1.02;
+                // filter: grayscale()
+                filter:saturate(2.5)
+            }
+        }
+    }  
 }
-// complementary-Style
+// latest work < section >
+.fr-work{
+    width: 49%;
+    background: $base_color;
+    border: 1px solid $lighter_slate; 
+    .imgCont{
+        width: 100%;
+        height: 200px;
+    }
+}
+// case study section
 .homeCaseStudy {
     border: 1px solid $lighter_slate;
     height: 350px;
-    >div{
-        width: 50%;
-        background: $base_color;
-        border: none;        
-        overflow: hidden;
-        .imgCont1x1{
-            width: 100%;
-            height: 100%;
-            img{
-                text-align: center;
-                height: 100%;
-                width: auto;
-                transition: 0.4s ease-in-out;
-            }
-        }   
-    }
     .caseStudyTxt{
         text-align: left;
         overflow: scroll;
@@ -99,6 +98,34 @@ a{
     .studyLink{
         text-align: right;
     }
+}
+.fr-study{
+    width: 50%;
+    background: $base_color;
+    border: none;        
+    overflow: hidden;
+    .imgCont{
+        width: 100%;
+        height: 100%;
+        img{
+            height: 100%;
+            width: auto;
+        }
+    }   
+}
+// home blog posts < section >
+.fr-hblog {
+    width: 32%;
+    background: $base_color;
+    border: 1px solid $lighter_slate;
+    .imgCont{
+        width: 100%;
+        height: 150px;
+    }
+    h4{
+        padding-top: 4px;
+        padding-bottom: 3px;
+    }  
 }
 
 //  Mobile styles ----------------------------------------- MOBILE
