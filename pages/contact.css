@@ -23,6 +23,7 @@ header .logo, footer .logo {
   font-family: Aldrich, Arial, Helvetica, sans-serif;
   font-size: 32px;
   margin-top: 3px;
+  color: #54BFFC;
 }
 header .logo a, footer .logo a {
   text-decoration: none;
@@ -600,6 +601,7 @@ body {
   position: relative;
   background: white;
   font-family: "Share Tech", Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
 }
 .personal-info div {
   width: 49%;
@@ -621,11 +623,11 @@ body {
     font-size: 25px;
   }
   .contactForm {
-    margin: 10px 0px 20px;
+    margin: 20px 0px 40px;
   }
   .contactForm form {
     margin: 0 auto;
-    max-width: 80%;
+    max-width: 90%;
     display: block;
   }
   .contactForm textarea {
@@ -650,10 +652,9 @@ body {
     bottom: 0px;
   }
   .personal-info {
-    margin: 0 auto;
+    margin: 10px auto 50px;
     max-width: 90%;
     display: block;
-    margin: 0 auto;
   }
   .personal-info div {
     width: 100%;

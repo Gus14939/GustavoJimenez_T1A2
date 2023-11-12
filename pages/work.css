@@ -23,6 +23,7 @@ header .logo, footer .logo {
   font-family: Aldrich, Arial, Helvetica, sans-serif;
   font-size: 32px;
   margin-top: 3px;
+  color: #54BFFC;
 }
 header .logo a, footer .logo a {
   text-decoration: none;
@@ -486,7 +487,7 @@ body {
   box-sizing: border-box;
   grid-gap: 8px;
   justify-content: center;
-  grid-template-rows: repeat(2, 190px);
+  grid-template-rows: repeat(4, 190px);
   grid-template-columns: repeat(auto-fit, minmax(320px, 340px));
   grid-auto-rows: 190px;
 }
@@ -498,14 +499,15 @@ body {
     grid-auto-rows: 160px;
   }
 }
-@media screen and (min-width: 381px) and (max-width: 544px) {
+@media screen and (min-width: 381px) and (max-width: 548px) {
   .gridance {
     grid-template-rows: repeat(6, 23vw);
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     grid-gap: 6px;
+    grid-auto-rows: 23vw;
   }
 }
-@media screen and (min-width: 545px) and (max-width: 962px) {
+@media screen and (min-width: 549px) and (max-width: 962px) {
   .gridance {
     grid-template-rows: repeat(2, 130px);
     grid-template-columns: repeat(auto-fit, minmax(220px, 240px));
@@ -524,19 +526,55 @@ body {
   overflow: hidden;
 }
 .gridance div:hover {
-  filter: saturate(1.25);
+  filter: saturate(1.5);
   background-size: 105%;
   border: 1px solid #a5abaf;
 }
 .gridance div:hover > img {
-  scale: 1.05;
+  scale: 1.07;
 }
 .gridance div img {
   width: 100%;
   transition: 0.4s ease-in-out;
 }
 
-.item {
-  background: url(../images/AdobeStock_451135987.jpeg) no-repeat center center;
-  background-size: 100%;
+.item-5 {
+  grid-area: 2/2/4/4;
+}
+
+.item-7 {
+  grid-area: 5/1/7/3;
+}
+
+@media screen and (min-width: 320px) and (max-width: 380px) {
+  .item-5 {
+    grid-area: auto;
+  }
+  .item-7 {
+    grid-area: auto;
+  }
+}
+@media screen and (min-width: 381px) and (max-width: 544px) {
+  .item-5 {
+    grid-area: 3/1/5/3;
+  }
+  .item-7 {
+    grid-area: 6/1/8/3;
+  }
+}
+@media screen and (min-width: 545px) and (max-width: 782px) {
+  .item-5 {
+    grid-area: 2/1/4/3;
+  }
+  .item-7 {
+    grid-area: 6/1/8/3;
+  }
+}
+@media screen and (min-width: 963px) and (max-width: 1094px) {
+  .item-5 {
+    grid-area: 2/1/4/3;
+  }
+  .item-7 {
+    grid-area: 6/1/8/3;
+  }
 }/*# sourceMappingURL=work.css.map */

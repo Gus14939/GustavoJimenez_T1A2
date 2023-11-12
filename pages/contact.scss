@@ -140,6 +140,7 @@ body{
     position: relative;
     background: $base_color;
     font-family: "Share Tech", Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
     div{
         width: 49%;
         img{
@@ -165,10 +166,10 @@ body{
         }
     }
     .contactForm{
-        margin: 10px 0px 20px;
+        margin: 20px 0px 40px;
         form{
             margin: 0 auto;
-            max-width: 80%;
+            max-width: 90%;
             display: block;
             // justify-content: space-between;
             // flex-wrap: wrap;
@@ -205,10 +206,9 @@ body{
         }
     }
     .personal-info{
-        margin: 0 auto;
+        margin: 10px auto 50px;
         max-width: 90%;
         display: block;
-        margin: 0 auto;
         // display: flex;
         // justify-content: space-between;
         // padding: 10px;

@@ -23,6 +23,7 @@ header .logo, footer .logo {
   font-family: Aldrich, Arial, Helvetica, sans-serif;
   font-size: 32px;
   margin-top: 3px;
+  color: #54BFFC;
 }
 header .logo a, footer .logo a {
   text-decoration: none;
