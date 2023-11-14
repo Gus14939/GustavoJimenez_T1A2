@@ -4,12 +4,14 @@ This is Gustavo Jimenez' Portfolio Website
 
 
 
-A link (URL) to your published portfolio website
+### A link (URL) to your published portfolio website
+https://gustavojimenezt1a2.netlify.app/
 
-A link to your GitHub repo
+#### A link to your GitHub repo
+https://github.com/Gus14939/GustavoJimenez_T1A2
 
-A link to your presentation video
-
+### A link to your presentation video
+https://gustavojimenezt1a2.netlify.app/assets/GustavoJimenez_T1A2_videoPresentation.mp4
 
 Description of your portfolio website, including,
 
@@ -26,7 +28,7 @@ Screenshots
 ![Guss Tech - Responsive Design](./docs/GustavoJimenez_T1A2_WireframeDesign.png)
 
 Target audience
-Guss Tech is a personal project. The main purpose of this site is to showcase what's been learnt during Term 1 and hopefully expose myself to further my knowledge by going deeper into more research and practice HTML and CSS
+Gussdev is a personal project. The main purpose of this site is to showcase what's been learnt during Term 1 and hopefully expose myself to further my knowledge by digging deeper into more research and practice HTML and CSS
 
 ## Tech stack (e.g. html, css, deployment platform, etc)
 

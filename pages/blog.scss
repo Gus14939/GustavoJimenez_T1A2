@@ -18,19 +18,49 @@ a{
         color: $dark_slate;
     }
 }
-.container{
+.blog_container{
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 648px; //calc(768px - 120px);
+    max-width: 970px;
+    box-sizing: border-box;
+    // top part as per container in main css
+
     background: $dark_slate;
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.homeSections{
+
+.blog_sections{
     display: flex;
     justify-content: space-between;
     font-size: 0.8em;
     background: $dark_slate;
+    box-sizing: border-box;
+    padding: 0px 0%;
     p, h1, h2, h3, h4, span{
         padding-left: 5%;
         padding-right: 5%;
+    }
+    h2{
+        margin-top: 0;
+    }
+}
+
+// case study section
+
+.section_fr{
+    width: 50%;
+    background: $dark_slate;
+    border: none;        
+    text-align: left;
+    h2{
+        margin-top:0px;
     }
     .imgCont{
         box-sizing: border-box;
@@ -47,32 +77,100 @@ a{
                 filter:saturate(2.5)
             }
         }
-    }  
-}
-
-// case study section
-.homeCaseStudy {
-    border: none; //1px solid $darkness;
-    height: 350px;
-    .caseStudyTxt{
-        text-align: left;
-    }
-
-}
-.fr-study{
-    width: 50%;
-    background: $dark_slate;
-    border: none;        
-    overflow: hidden;
-    .imgCont{
-        width: 100%;
-        height: 100%;
-        img{
-            height: 100%;
-            width: auto;
-        }
-    }   
+    }    
 }
 footer{
     justify-content: center;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+//  Mobile styles ----------------------------------------- MOBILE
+/////////////////////////////////////////////////////////////////
+@media screen and (max-width:650px) {
+    .blog_container{
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 320px;
+        max-width: 650px;
+        box-sizing: border-box;
+        // top part as per container in main css
+    
+        background: $dark_slate;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .blog_sections{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        // justify-content: space-between;
+        // font-size: 0.8em;
+        // background: $dark_slate;
+        box-sizing: border-box;
+        padding: 0px 5%;
+        p, h1, h2, h3, h4, span{
+            padding-left: 0%;
+            padding-right: 0%;
+        }
+    }
+    .section_fr{
+        width: 100%;
+        margin-bottom:20px;
+        .imgCont{
+            box-sizing: border-box;
+            overflow: hidden;
+        }    
+    }
+    .logo.blog{
+     font-size: 20px;
+    }
+}
+//  Tablet styles ----------------------------------------- TABLE
+/////////////////////////////////////////////////////////////////
+@media screen and (min-width:651px) and (max-width:860px) {
+    .blog_container{
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 651px; //calc(768px - 120px);
+        max-width: 962px;
+        box-sizing: border-box;
+        // top part as per container in main css
+    
+        background: $dark_slate;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .blog_sections{
+        display: block;
+        width: 100%;
+        // justify-content: space-between;
+        // font-size: 0.8em;
+        // background: $dark_slate;
+        box-sizing: border-box;
+        padding: 0px 5%;
+        p, h1, h2, h3, h4, span{
+            padding-left: 0%;
+            padding-right: 0%;
+        }
+        
+    }
+    .section_fr{
+        width: 100%;
+        margin-bottom:20px;
+        .imgCont{
+            box-sizing: border-box;
+            overflow: hidden;
+        }    
+    }
 }
