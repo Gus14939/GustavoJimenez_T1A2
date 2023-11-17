@@ -16,25 +16,31 @@
 </head>
 
 <body>
+    <!-- HEADER Starts -->
     <header class="container">
         <div class="logo">
             <a href="../index.html">
                 <div>Gussdev</div>
             </a>
         </div>
-        <nav>
+        <!-- open burger button for mainNAV -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <div id="burgerNavOpen" class="burgerNavOpen">I</div>
+        </a>
+        <!-- open burger button for mainNAV -->    
+        <nav id="mainNAV">
             <div class="navItemCont">
-                <a href="about.html">
+                <a href="./about.html">
                     <div>about</div>
                 </a>
             </div>
             <div class="navItemCont">
-                <a href="">
+                <a><!-- selected -->
                     <div class="selected">work</div>
                 </a>
             </div>
             <div class="navItemCont">
-                <a href="contact.html">
+                <a href="./contact.html">
                     <div>contact</div>
                 </a>
             </div>
@@ -97,6 +103,22 @@
             <!-- <p>P: 0426 243 ••• | A: 116 Wycombe Rd, Sydney, NSW</p> -->
         </div>
     </footer>
+<!-- Script to bring the burger menu on smartphones -->
+<script>
+    function myFunction() {
+        var x = document.getElementById("mainNAV");
+        if (x.style.display === "block") {
+        x.style.display = "none";
+        } else {
+        x.style.display = "block";
+        }
+        var y = document.getElementById("burgerNavOpen");
+        if (y.innerHTML === "I") {
+        y.innerHTML = "0";
+        } else {
+        y.innerHTML = "I";
+        }
+    }
+</script>
 </body>
-
 </html>

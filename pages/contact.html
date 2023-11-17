@@ -13,25 +13,37 @@
     <link rel="stylesheet" href="./contact.css">
 </head>
 <body>
-    <!-- <div class="container"> -->
-        <header class="container">        
-            <div class="logo">
-                <a href="../index.html"><div>Gussdev</div></a>
+    <!-- HEADER Starts -->
+    <header class="container">
+        <div class="logo">
+            <a href="../index.html">
+                <div>Gussdev</div>
+            </a>
+        </div>
+        <!-- open burger button for mainNAV -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <div id="burgerNavOpen" class="burgerNavOpen">I</div>
+        </a>
+        <!-- open burger button for mainNAV -->    
+        <nav id="mainNAV">
+            <div class="navItemCont">
+                <a href="./about.html">
+                    <div>about</div>
+                </a>
             </div>
-            <nav>
-                <div class="navItemCont">
-                    <a href="about.html"><div>about</div></a>
-                </div>
-                <div class="navItemCont">
-                    <a href="work.html"><div>work</div></a>
-                </div>
-                <div class="navItemCont">
-                    <a href=""><div class="selected">contact</div></a>
-                </div>    
-            </nav>
-        </header>
-
-        <!-- MAIN Starts -->
+            <div class="navItemCont">
+                <a href="./work.html">
+                    <div>work</div>
+                </a>
+            </div>
+            <div class="navItemCont">
+                <a><!-- selected -->
+                    <div class="selected">contact</div>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- MAIN Starts -->
         <main class="container">
             <div class="">
                 <h1> Great, you're one step closer to your goals and creating something great</h1>   
@@ -73,21 +85,41 @@
             <!-- </div> -->
         </main>
         <!-- FOOTER Starts -->
-        <footer class="container">     
+        <footer class="container">
             <div class="footLinks">
                 <div class="footItemCont">
-                    <a href="https://github.com/Gus14939" target="_blank"><div class="footLinks-a">github</div></a>
+                    <a href="https://github.com/Gus14939" target="_blank">
+                        <div class="footLinks-a">github</div>
+                    </a>
                 </div>
                 <div class="footItemCont">
-                    <a href="https://www.linkedin.com/in/guss55/" target="_blank"><div class="footLinks-a">linkedIn</div></a>
-                </div>  
-            </div>   
+                    <a href="https://www.linkedin.com/in/guss55/" target="_blank">
+                        <div class="footLinks-a">linkedIn</div>
+                    </a>
+                </div>
+            </div>
             <div class="footDeets">
                 <p>&copy; 2023 Gustavo Jimenez </p>
                 <p>All Rights Reserved </p>
                 <!-- <p>P: 0426 243 ••• | A: 116 Wycombe Rd, Sydney, NSW</p> -->
             </div>
         </footer>
-    <!-- </div> -->
+<!-- Script to bring the burger menu on smartphones -->
+<script>
+    function myFunction() {
+        var x = document.getElementById("mainNAV");
+        if (x.style.display === "block") {
+        x.style.display = "none";
+        } else {
+        x.style.display = "block";
+        }
+        var y = document.getElementById("burgerNavOpen");
+        if (y.innerHTML === "I") {
+        y.innerHTML = "0";
+        } else {
+        y.innerHTML = "I";
+        }
+    }
+</script>
 </body>
 </html>

@@ -15,14 +15,19 @@
 </head>
 
 <body>
-    <!-- <div class="container"> -->
+    <!-- HEADER Starts -->
     <header class="container">
         <div class="logo">
-            <a href="">
+            <a>
                 <div>Gussdev</div>
             </a>
         </div>
-        <nav>
+        <!-- open burger button for mainNAV -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <div id="burgerNavOpen" class="burgerNavOpen">I</div>
+        </a>
+        <!-- open burger button for mainNAV -->    
+        <nav id="mainNAV">
             <div class="navItemCont">
                 <a href="pages/about.html">
                     <div>about</div>
@@ -41,6 +46,7 @@
         </nav>
     </header>
 
+    <!-- MAIN Starts -->
     <main class="container">
         <div class="homeTT">
             <h1>I aspire to build close connections between products, services and entities with and end consumers to
@@ -130,6 +136,7 @@
         </div>
     </main>
 
+    <!-- FOOTER Starts -->
     <footer class="container">
         <div class="footLinks">
             <div class="footItemCont">
@@ -149,6 +156,22 @@
             <!-- <p>P: 0426 243 ••• | A: 116 Wycombe Rd, Sydney, NSW</p> -->
         </div>
     </footer>
-    <!-- </div> -->
+<!-- Script to bring the burger menu on smartphones -->
+<script>
+    function myFunction() {
+        var x = document.getElementById("mainNAV");
+        if (x.style.display === "block") {
+        x.style.display = "none";
+        } else {
+        x.style.display = "block";
+        }
+        var y = document.getElementById("burgerNavOpen");
+        if (y.innerHTML === "I") {
+        y.innerHTML = "0";
+        } else {
+        y.innerHTML = "I";
+        }
+    }
+</script>
 </body>
 </html>

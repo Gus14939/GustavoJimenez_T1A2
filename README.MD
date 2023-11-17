@@ -18,18 +18,15 @@ Gussdev is an HTML/CSS portfolio project. The main purpose of this site is to sh
 
 **Design:** The design of the website is visually appealing and professional. It highlights my work and skills. Minimalism is always a good option for a design like a portfolio, but also suits my style and personality.
 
-**Navigation:** This website is very easy to navigate, with clear and concise menus that help visitors find what they’re looking for. while a sticky navigation could have been a good option I opted to bar that stays visible as visitors scroll down the page.
+**Navigation:** This website is very easy to navigate, with clear and concise menus that help visitors find what they’re looking for. While a sticky navigation could have been a good option I opted to keep it scrollable to have the content clean.
 
-Responsive design: Your website should be optimized for all devices, including desktops, laptops, tablets, and smartphones. Responsive design ensures that your website looks great and functions well on any device.
+**Responsive design:** This portfolio website is optimised for all devices, including desktops, laptops, tablets, and smartphones. The components look great and functions well on any device.
 
-Portfolio: Your portfolio should be the centerpiece of your website. It should showcase your best work and highlight your skills and experience. Consider organizing your portfolio by project type or industry.
+**Portfolio:** I tried making the portfolio the centerpiece of the website. It meant to showcase my best work and highlight my skills and experience. While the content is fictional, this page is the most visually engaging of the site.
 
-Contact information: Make it easy for visitors to contact you by including your email address, phone number, and social media links on your website.
+**Contact information:** I made it easy for visitors to contact me by including several link throughout the site. the contact page has key information like, email, address, phone number.
 
-Testimonials: Including testimonials from satisfied clients or employers can help build your credibility and establish trust with potential clients.
-
-Blog: A blog can help you establish yourself as an expert in your field and drive traffic to your website. Consider writing blog posts about your work, industry trends, or other topics that are relevant to your audience.
-
+**Blog:** the blog helps establish me as an expert in the field and drive traffic to the website.
 
 ## sitemap
 ![Gussdev Portfolio website sitemap](./docs/GustavoJimenez_T1A2_SiteMap.png)

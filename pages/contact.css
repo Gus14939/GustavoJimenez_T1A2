@@ -39,11 +39,35 @@ header .footDeets p, footer .footDeets p {
   text-align: right;
 }
 
+.burgerNavOpen {
+  position: absolute;
+  top: 10px;
+  right: 4%;
+  width: 40px;
+  height: auto;
+  z-index: 11;
+  display: none;
+  box-sizing: border-box;
+  font-family: "Arial", Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.5em;
+  padding: 3px 0px;
+  border: 1px solid #2f2f31;
+  border-radius: 8px;
+  border-bottom: 3px solid #2f2f31;
+  border-right: 3px solid #2f2f31;
+  background: white;
+}
+
 nav {
   display: flex;
   width: 60%;
   height: 50px;
   justify-content: space-between;
+  z-index: 10;
 }
 nav .navItemCont {
   width: 31%;
@@ -118,30 +142,42 @@ nav .navItemCont a .selected {
   }
   header .logo, footer .logo {
     font-size: 30px;
-    text-align: center;
+    text-align: left;
+    margin-left: 3%;
   }
   header .footDeets p, footer .footDeets p {
     text-align: center;
   }
+  .burgerNavOpen {
+    display: block;
+  }
+  #mainNAV {
+    display: none;
+  }
   nav {
-    display: flex;
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: 0;
     width: 100%;
-    height: 40px;
-    justify-content: space-around;
-    margin-top: 10px;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 80px 40px 0px;
+    background: rgba(0, 0, 0, 0.9);
   }
   nav .navItemCont {
-    width: 31%;
-    min-width: 28%;
+    width: 100%;
     text-align: center;
     position: relative;
+    margin: 20px 0;
+    font-size: 1em;
   }
   nav .navItemCont a {
     text-decoration: none;
     color: #2f2f31;
   }
   nav .navItemCont a div {
-    padding: 3px 0px;
+    padding: 15px 0px;
     border: 1px solid #2f2f31;
     border-radius: 6px;
     border-bottom: 1px solid #2f2f31;
@@ -198,6 +234,12 @@ nav .navItemCont a .selected {
 @media screen and (min-width: 481px) and (max-width: 962px) {
   header .logo, footer .logo {
     font-size: 24px;
+  }
+  nav {
+    display: flex;
+    width: 60%;
+    height: 50px;
+    justify-content: space-between;
   }
   nav .navItemCont a div {
     padding: 4px 0px;
