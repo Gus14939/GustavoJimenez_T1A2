@@ -1,41 +1,78 @@
-## Gustavo Jimenez T1A2
-
-This is Gustavo Jimenez' Portfolio Website
-
-
-
+# Gustavo Jimenez T1A2
+**This is Gustavo Jimenez' Portfolio website**
+  
 ### A link (URL) to your published portfolio website
 https://gustavojimenezt1a2.netlify.app/
 
-#### A link to your GitHub repo
+### A link to your GitHub repo
 https://github.com/Gus14939/GustavoJimenez_T1A2
 
 ### A link to your presentation video
 https://gustavojimenezt1a2.netlify.app/assets/GustavoJimenez_T1A2_videoPresentation.mp4
+## Description of the portfolio website:
 
-Description of your portfolio website, including,
+### Purpose
+Gussdev is an HTML/CSS portfolio project. The main purpose of this site is to showcase what's been learnt during Term 1 and hopefully expose myself to further my knowledge by digging deeper into more research and put it into practice in HTML and CSS
 
-Purpose
+### Functionality / features
 
-Functionality / features
+**Design:** The design of the website is visually appealing and professional. It highlights my work and skills. Minimalism is always a good option for a design like a portfolio, but also suits my style and personality.
 
-Sitemap
-## Guss Tech Portfolio website - sitemap
-![Guss Tec Portfolio website sitemap](./docs/GustavoJimenez_T1A2_SiteMap.png)
+**Navigation:** This website is very easy to navigate, with clear and concise menus that help visitors find what they’re looking for. while a sticky navigation could have been a good option I opted to bar that stays visible as visitors scroll down the page.
 
-Screenshots
-## Guss Tech Portfolio website - Responsive Design
-![Guss Tech - Responsive Design](./docs/GustavoJimenez_T1A2_WireframeDesign.png)
+Responsive design: Your website should be optimized for all devices, including desktops, laptops, tablets, and smartphones. Responsive design ensures that your website looks great and functions well on any device.
 
-Target audience
-Gussdev is a personal project. The main purpose of this site is to showcase what's been learnt during Term 1 and hopefully expose myself to further my knowledge by digging deeper into more research and practice HTML and CSS
+Portfolio: Your portfolio should be the centerpiece of your website. It should showcase your best work and highlight your skills and experience. Consider organizing your portfolio by project type or industry.
+
+Contact information: Make it easy for visitors to contact you by including your email address, phone number, and social media links on your website.
+
+Testimonials: Including testimonials from satisfied clients or employers can help build your credibility and establish trust with potential clients.
+
+Blog: A blog can help you establish yourself as an expert in your field and drive traffic to your website. Consider writing blog posts about your work, industry trends, or other topics that are relevant to your audience.
+
+
+## sitemap
+![Gussdev Portfolio website sitemap](./docs/GustavoJimenez_T1A2_SiteMap.png)
+
+
+### Mobile Wireframe
+![Gussdev - Mobile wireframe Design](./docs/wireframe/Mobile-Wireframe.png)
+
+### Tablet Wireframe
+![Gussdev - Tablet wireframe Design](./docs/wireframe/Tablet-Wireframe.png)
+
+### Desktop Wireframe
+![Gussdev - Desktop 01 wireframe Design](./docs/wireframe/Desktop1-Wireframe.png)
+![Gussdev - Desktop 02 wireframe Design](./docs/wireframe/Desktop2-Wireframe.png)
+
+_______
+### Screenshots  
+**Desktop**  
+![Gussdev - Desktop 01 home screenshot](./docs/screenshots/Desktop-home.jpg)![Gussdev - Desktop 02 about screenshot](./docs/screenshots/Desktop-about.jpg)![Gussdev - Desktop 03 work screenshot](./docs/screenshots/Desktop-work.jpg)![Gussdev - Desktop 04 contact screenshot](./docs/screenshots/Desktop-contact.jpg)![Gussdev - Desktop 05 blog screenshot](./docs/screenshots/Desktop-blog.jpg)
+_______  
+**Tablet**  
+![Gussdev - Tablet 01 home screenshot](./docs/screenshots/Tablet-home.jpg)![Gussdev - Tablet 02 about screenshot](./docs/screenshots/Tablet-about.jpg)![Gussdev - Tablet 03 work screenshot](./docs/screenshots/Tablet-work.jpg)![Gussdev - Tablet 04 contact screenshot](./docs/screenshots/Tablet-contact.jpg)![Gussdev - Tablet 05 blog screenshot](./docs/screenshots/Tablet-blog.jpg)
+_______  
+**Mobile**
+x  
+x  
+x    
+x  
+x  
+x  
+x  
+x  
+x  
+x  
+
+
+______
+## Target audience
+It is a personal project. However, I spend enough time to make it enjoyable and hopefully inspiring for other students. Teachers may also be part of the target audience. However, I think this site is mainly one part of a personal portfolio for CA partners to take interest in me as a prospective part of their team
 
 ## Tech stack (e.g. html, css, deployment platform, etc)
-
-**The main technologies used in this project are**
-
-- Markdown language
-- HTML
-- CSS
-- JavaScript 
-    - only needed for the navigation menu activation
+- Markup // Readme file and documentation
+- HTML // Basic structure of the site
+- CSS // styling for website 
+- Git and Github // Storing and Tracking the project
+- Netlify // Website deployment

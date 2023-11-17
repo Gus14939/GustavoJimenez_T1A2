@@ -390,6 +390,10 @@ img {
     display: block;
     width: 100%;
   }
+  .homeSections p, .homeSections h3, .homeSections h4, .homeSections span {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
   .fr-work {
     width: 100%;
     background: white;

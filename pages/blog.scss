@@ -18,6 +18,10 @@ a{
         color: $dark_slate;
     }
 }
+.blog_TT{
+    padding-left: 60px;
+    padding-right: 60px;
+}
 .blog_container{
     padding-left: 40px;
     padding-right: 40px;
@@ -88,6 +92,10 @@ footer{
 //  Mobile styles ----------------------------------------- MOBILE
 /////////////////////////////////////////////////////////////////
 @media screen and (max-width:650px) {
+    .blog_TT{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     .blog_container{
         padding-left: 0px;
         padding-right: 0px;
@@ -133,7 +141,7 @@ footer{
 }
 //  Tablet styles ----------------------------------------- TABLE
 /////////////////////////////////////////////////////////////////
-@media screen and (min-width:651px) and (max-width:860px) {
+@media screen and (min-width:651px) and (max-width:820px) {
     .blog_container{
         padding-left: 0px;
         padding-right: 0px;
@@ -143,7 +151,7 @@ footer{
         margin-left: auto;
         margin-right: auto;
         min-width: 651px; //calc(768px - 120px);
-        max-width: 962px;
+        max-width: 820px;
         box-sizing: border-box;
         // top part as per container in main css
     
