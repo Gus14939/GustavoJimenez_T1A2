@@ -148,6 +148,12 @@ nav .navItemCont a .selected {
   header .footDeets p, footer .footDeets p {
     text-align: center;
   }
+  ._flex {
+    display: flex;
+    width: 60%;
+    height: 50px;
+    justify-content: space-between;
+  }
   .burgerNavOpen {
     display: block;
   }
@@ -163,7 +169,7 @@ nav .navItemCont a .selected {
     height: 100vh;
     box-sizing: border-box;
     padding: 80px 40px 0px;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.8);
   }
   nav .navItemCont {
     width: 100%;

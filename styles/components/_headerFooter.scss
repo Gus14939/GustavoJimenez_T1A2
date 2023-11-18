@@ -162,6 +162,13 @@ nav{
             }
         }
     }    
+    // for the blog header
+    ._flex{
+        display: flex;
+        width: 60%;
+        height: 50px;
+        justify-content: space-between;
+    }
     // burber navigation display none
     .burgerNavOpen{
         display: block;
@@ -178,7 +185,7 @@ nav{
         height:100vh;
         box-sizing: border-box;
         padding: 80px 40px 0px;
-        background: rgba($color: #000000, $alpha: 0.9);
+        background: rgba($color: #000000, $alpha: 0.8);
         // justify-content:space-around;
         .navItemCont{
             width: 100%;

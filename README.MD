@@ -50,17 +50,8 @@ _______
 **Tablet**  
 ![Gussdev - Tablet 01 home screenshot](./docs/screenshots/Tablet-home.jpg)![Gussdev - Tablet 02 about screenshot](./docs/screenshots/Tablet-about.jpg)![Gussdev - Tablet 03 work screenshot](./docs/screenshots/Tablet-work.jpg)![Gussdev - Tablet 04 contact screenshot](./docs/screenshots/Tablet-contact.jpg)![Gussdev - Tablet 05 blog screenshot](./docs/screenshots/Tablet-blog.jpg)
 _______  
-**Mobile**
-x  
-x  
-x    
-x  
-x  
-x  
-x  
-x  
-x  
-x  
+**Mobile**  
+![Gussdev - Mobile 01 home screenshot](./docs/screenshots/Mobile-home.jpg)![Gussdev - Mobile 02 about screenshot](./docs/screenshots/Mobile-about.jpg)![Gussdev - Mobile 03 work screenshot](./docs/screenshots/Mobile-work.jpg)![Gussdev - Mobile 04 contact screenshot](./docs/screenshots/Mobile-contact.jpg)![Gussdev - Mobile 05 blog screenshot](./docs/screenshots/Mobile-blog.jpg)
 
 
 ______
@@ -71,5 +62,6 @@ It is a personal project. However, I spend enough time to make it enjoyable and 
 - Markup // Readme file and documentation
 - HTML // Basic structure of the site
 - CSS // styling for website 
+- JS // for the mobile menu implementation
 - Git and Github // Storing and Tracking the project
 - Netlify // Website deployment
