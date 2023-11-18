@@ -1,0 +1,174 @@
+$halfTime:calc(0.5s - 0.1s);
+$gridTime:calc(0.2s);
+
+@mixin menuAniSetup{
+    opacity: 0;    
+    transform: translateY(-50px);
+    animation-name: navAni;
+    animation-duration: calc($halfTime - 0.0s);
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+.menu-item1{
+    @include menuAniSetup();
+    animation-delay: calc($halfTime + 0.0s);   
+}
+.menu-item2{
+    @include menuAniSetup();
+    animation-delay: calc($halfTime + 0.1s);
+}
+.menu-item3{
+    @include menuAniSetup();
+    animation-delay: calc($halfTime + 0.2s);
+}
+@keyframes navAni {
+    0%   {
+        transform: translateY(-50px);
+        opacity: 0;    
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;    
+    }
+}
+// - home sections animations
+@mixin sectionsAniSetup{
+    opacity: 0;    
+    transform: translateY(140px);
+    animation-name: sectionsAni;
+    animation-duration: calc($halfTime + 0.4s);
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+.homeTT{
+    @include sectionsAniSetup();
+    animation-delay: calc($halfTime + 0.2s);
+    transform: translateY(200px);
+}
+#section01{
+    @include sectionsAniSetup();
+    animation-delay: calc($halfTime + 0.4s);
+    h2{
+        @include sectionsAniSetup();
+        animation-delay: calc($halfTime + 0.6s);
+        transform: translateY(100px);
+    }
+}
+#section02{
+    @include sectionsAniSetup();
+    animation-delay: calc($halfTime + 0.6s);
+    h2{
+        @include sectionsAniSetup();
+        animation-delay: calc($halfTime + 0.8s);
+        transform: translateY(100px);
+    }
+}
+#section03{
+    @include sectionsAniSetup();
+    animation-delay: calc($halfTime + 0.8s);
+    h2, h3{
+        @include sectionsAniSetup();
+        animation-delay: calc($halfTime + 1.0s);
+        transform: translateY(100px);
+    }
+}
+@keyframes sectionsAni {
+    0%   {
+        transform: translateY(140px);
+        opacity: 0;    
+    }
+    33% {
+        opacity: 0;    
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;    
+    }
+}
+
+
+
+
+@keyframes simpleOpacity {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+// - About and Contact Page animation
+.mainAbout, .mainContact {   
+    opacity:0;
+    animation-name: simpleOpacity;
+    animation-delay: calc(0.2s);
+    animation-duration: calc($halfTime + $halfTime);
+    animation-fill-mode: forwards;
+}
+// - Work Page animation
+
+.container > h1 {   
+
+    opacity:0;
+    animation-name: simpleOpacity;
+    animation-delay: calc(0.2s);
+    animation-duration: calc($halfTime + $halfTime + $halfTime);
+    animation-fill-mode: forwards;
+}
+
+//// GRID
+@mixin gridItemsAniSetup{
+    opacity: 0;    
+    transform: translateY(1040px);
+    animation-name: gridItemsAni;
+    animation-duration: calc($halfTime + $halfTime + 0.2s);
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.item{
+    @include gridItemsAniSetup();
+}
+.item-1{
+    animation-delay: calc($gridTime + 0.0s);
+}
+.item-2{
+    animation-delay: calc($gridTime + 0.15s);
+}
+.item-3{
+    animation-delay: calc($gridTime + 0.2s);
+}
+.item-4{
+    animation-delay: calc($gridTime + 0.25s);
+}
+.item-5{
+    animation-delay: calc($gridTime + 0.3s);
+}
+.item-6{
+    animation-delay: calc($gridTime + 0.35s);
+}
+.item-7{
+    animation-delay: calc($gridTime + 0.4s);
+}
+.item-8{
+    animation-delay: calc($gridTime + 0.45s);
+}
+.item-9{
+    animation-delay: calc($gridTime + 0.5s);
+}
+.item-10{
+    animation-delay: calc($gridTime + 0.55s);
+}
+.item-11{
+    animation-delay: calc($gridTime + 0.6s);
+}
+.item-12{
+    animation-delay: calc($gridTime + 0.65s);
+}
+
+@keyframes gridItemsAni {
+    0%   {
+        transform: translateY(140px);
+        opacity: 0;    
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;    
+    }
+}

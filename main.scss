@@ -1,5 +1,6 @@
 @import "./styles/colors";
 @import "./styles/components/headerFooter";
+@import "./styles/components/animations";
 
 body{
     padding: 0;
@@ -194,8 +195,8 @@ img{
         // justify-content: space-between;
         // font-size: 0.8em;
         p, h3, h4, span{
-             padding-left: 0%;
-             padding-right: 0%;
+            padding-left: 5%;
+            padding-right: 5%;
         }
     }
     .fr-work{
@@ -228,6 +229,8 @@ img{
 .letsChat{
     text-align: center;
     font-size: 1.5em;
+    padding-left: 5%;
+    padding-right:5%;
 
 }
 
