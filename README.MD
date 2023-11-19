@@ -8,7 +8,10 @@ https://gustavojimenezt1a2.netlify.app/
 https://github.com/Gus14939/GustavoJimenez_T1A2
 
 ### A link to your presentation video
-https://gustavojimenezt1a2.netlify.app/assets/GustavoJimenez_T1A2_videoPresentation.mp4
+YouTube link  
+https://www.youtube.com/watch?v=Sl6-H8k40kwgit
+
+
 ## Description of the portfolio website:
 
 ### Purpose
