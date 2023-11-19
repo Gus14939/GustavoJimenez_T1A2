@@ -48,14 +48,29 @@ Gussdev is an HTML/CSS portfolio project. The main purpose of this site is to sh
 _______
 ### Screenshots  
 **Desktop**  
-![Gussdev - Desktop 01 home screenshot](./docs/screenshots/Desktop-home.jpg)![Gussdev - Desktop 02 about screenshot](./docs/screenshots/Desktop-about.jpg)![Gussdev - Desktop 03 work screenshot](./docs/screenshots/Desktop-work.jpg)![Gussdev - Desktop 04 contact screenshot](./docs/screenshots/Desktop-contact.jpg)![Gussdev - Desktop 05 blog screenshot](./docs/screenshots/Desktop-blog.jpg)
+![Gussdev - Desktop 01 home screenshot](./docs/screenshots/Desktop-home.jpg)
+![Gussdev - Desktop 02 about screenshot](./docs/screenshots/Desktop-about.jpg)
+![Gussdev - Desktop 03 work screenshot](./docs/screenshots/Desktop-work.jpg)
+![Gussdev - Desktop 04 contact screenshot](./docs/screenshots/Desktop-contact.jpg)
+![Gussdev - Desktop 05 blog screenshot](./docs/screenshots/Desktop-blog.jpg)  
+**END of Desktop**
 _______  
 **Tablet**  
-![Gussdev - Tablet 01 home screenshot](./docs/screenshots/Tablet-home.jpg)![Gussdev - Tablet 02 about screenshot](./docs/screenshots/Tablet-about.jpg)![Gussdev - Tablet 03 work screenshot](./docs/screenshots/Tablet-work.jpg)![Gussdev - Tablet 04 contact screenshot](./docs/screenshots/Tablet-contact.jpg)![Gussdev - Tablet 05 blog screenshot](./docs/screenshots/Tablet-blog.jpg)
+![Gussdev - Tablet 01 home screenshot](./docs/screenshots/Tablet-home.jpg)
+![Gussdev - Tablet 02 about screenshot](./docs/screenshots/Tablet-about.jpg)
+![Gussdev - Tablet 03 work screenshot](./docs/screenshots/Tablet-work.jpg)
+![Gussdev - Tablet 04 contact screenshot](./docs/screenshots/Tablet-contact.jpg)
+![Gussdev - Tablet 05 blog screenshot](./docs/screenshots/Tablet-blog.jpg)  
+**END of Tablet**  
 _______  
 **Mobile**  
-![Gussdev - Mobile 01 home screenshot](./docs/screenshots/Mobile-home.jpg)![Gussdev - Mobile 02 about screenshot](./docs/screenshots/Mobile-about.jpg)![Gussdev - Mobile 03 work screenshot](./docs/screenshots/Mobile-work.jpg)![Gussdev - Mobile 04 contact screenshot](./docs/screenshots/Mobile-contact.jpg)![Gussdev - Mobile 05 blog screenshot](./docs/screenshots/Mobile-blog.jpg)
-
+![Gussdev - Mobile Global Menu screenshot](./docs/screenshots/mobile-menu.jpg)
+![Gussdev - Mobile 01 home screenshot](./docs/screenshots/Mobile-home.jpg)
+![Gussdev - Mobile 02 about screenshot](./docs/screenshots/mobile-about.jpg)
+![Gussdev - Mobile 03 work screenshot](./docs/screenshots/mobile-work.jpg)
+![Gussdev - Mobile 04 contact screenshot](./docs/screenshots/mobile-contact.jpg)
+![Gussdev - Mobile 05 blog screenshot](./docs/screenshots/mobile-blog.jpg)  
+**END of Mobile**
 
 ______
 ## Target audience
